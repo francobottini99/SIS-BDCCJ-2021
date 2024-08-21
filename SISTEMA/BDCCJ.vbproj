@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{151D023B-4B41-438F-804D-D86ED10685F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BDCCJ.My.MyApplication</StartupObject>
+    <RootNamespace>BDCCJ</RootNamespace>
+    <AssemblyName>BDCCJ</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BDCCJ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BDCCJ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>balanza_mBN_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\007) DRIVERS\Visual Studio 2019\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\frmCamara.Designer.vb">
+      <DependentUpon>frmCamara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCamara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCasos.Designer.vb">
+      <DependentUpon>frmCasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultas.Designer.vb">
+      <DependentUpon>frmConsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFueros.Designer.vb">
+      <DependentUpon>frmFueros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFueros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmInicio.Designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMsg.Designer.vb">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPPal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPPal.Designer.vb">
+      <DependentUpon>frmPPal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTipos.Designer.vb">
+      <DependentUpon>frmTipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTribunales.Designer.vb">
+      <DependentUpon>frmTribunales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTribunales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utilidades\Notificaciones.vb" />
+    <Compile Include="Utilidades\UtilidadesDGV.vb" />
+    <Compile Include="Utilidades\UtilidadesListas.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\frmCamara.resx">
+      <DependentUpon>frmCamara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCasos.resx">
+      <DependentUpon>frmCasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultas.resx">
+      <DependentUpon>frmConsultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFueros.resx">
+      <DependentUpon>frmFueros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMsg.resx">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPPal.resx">
+      <DependentUpon>frmPPal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTipos.resx">
+      <DependentUpon>frmTipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTribunales.resx">
+      <DependentUpon>frmTribunales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoBancos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoBanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCategorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoRemito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoNota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoAlrtas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoAltas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoConsultas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoGestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.vbproj">
+      <Project>{3498c800-7479-4139-9d27-83af961ad63b}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Alerta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoError1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoOk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoGuardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoModificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoBorrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="balanza_mBN_icon.ico" />
+    <Content Include="LogoSistema.ico" />
+    <None Include="Resources\IconoPedido.png" />
+    <None Include="Resources\IconoRecibo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
